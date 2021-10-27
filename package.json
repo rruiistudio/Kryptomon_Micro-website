@@ -1,0 +1,25 @@
+{
+  "name": "kriptomon_micro-website",
+  "version": "1.0.0",
+  "description": "treasure hunt microsite",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rruiistudio/Kryptomon_Micro-website.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "rruiidev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rruiistudio/Kryptomon_Micro-website/issues"
+  },
+  "homepage": "https://github.com/rruiistudio/Kryptomon_Micro-website#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
