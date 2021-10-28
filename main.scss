@@ -1,11 +1,17 @@
 #body{
-    display: flex;
-    flex-direction: column;
-    padding-top: 5%; 
-    right: 0;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    margin: 0;
 }
 
-#h1 {
-    font-size: 100px;
-    color: pink;
+#map{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: hidden; 
+    overflow-x: hidden;
 }
+
+.example::-webkit-scrollbar {
+    display: none;
+  }
