@@ -2,20 +2,34 @@
 
 <head>
     <link rel="stylesheet" href="main.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <script src='map.js' defer></script>
+    <link rel="icon" type="image/jpg" href="./images/kLogo.png"/>
+    <title>Hunt Login</title>
+    
 </head>
 
+<html>
 
-<html>    
-    <body>
-        <div id='map'></div>
-    </body>
+<body>
+    <div id='cont'>
+       
+        <div id="auth">
+            <p>Input your token to login</p>
+            <div id="field">
+                <input id="login" class="input" type="text">
+            </div>
+            <img id="verif" class= "button" src="./images/verify_button.png">
+        </div>
     
 
+        <div id='back' class='obj'>
+        </div>
+
+    </div>
+
+</body>
+
+<script type="module" src='./scripts/login.js'></script>
+
+
+
 </html>
-
-
-
-

@@ -1,17 +1,212 @@
+@font-face {
+    font-family: 'mister_london';
+    src: url('./font/mister_london_sans-webfont.woff2') format('woff2'),
+         url('./font/mister_london_sans-webfont.woff') format('woff'),
+         url('./font/mister_london_sans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.disable-dbl-tap-zoom {
+    touch-action: manipulation;
+  }
+
+
 #body{
     overflow-y: hidden; 
     overflow-x: hidden;
     margin: 0;
 }
 
-#map{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    overflow-y: hidden; 
-    overflow-x: hidden;
-}
+
 
 .example::-webkit-scrollbar {
     display: none;
   }
+
+#cont {
+    position: fixed; 
+    display: flex;
+    height: 100vh;
+    width: 100vw; 
+    overflow: hidden;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    font-family: 'mister_london';
+
+    #head {
+        position: fixed;
+        display: flex; 
+        align-items: center;
+        top: 0; 
+        width: 100vw;
+
+        #header {
+            width: inherit;
+        }   
+    
+
+    }
+
+    #auth {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        position: inherit;
+        //background-color: pink;
+        width: 80vw;
+        height: 30vh; 
+        text-align: center;
+        font-size: 50px;
+        color: white; 
+
+        #field{
+            margin-top: 15%;
+            position: inherit;
+            display: inherit;
+            width: 80vw;
+            height: 8vh;
+            background: white;
+            opacity: 0.6;
+            border-radius: 50px !important; 
+            border-collapse: separate;
+            overflow: hidden;
+            
+
+            .input{
+                font-size: 60px;
+                font-family: 'mister_london';
+                width: inherit;
+                height: inherit;
+                text-align: center;
+                border:0px;
+            }
+        }
+
+        #verif {
+            margin-top: 40%;     
+        }
+
+        
+       
+    }
+
+    .button{
+        width: 40vw;
+        display: inline-block; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .button:active{
+        opacity: 50%; 
+        z-index: 10;
+    }
+
+
+    
+
+    #corners { 
+        position: fixed;
+        display: inline-flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 0; 
+        width: 100vw;
+        overflow: hidden; 
+
+        .corners{
+            width: 100vw;
+            position: fixed;
+            margin: 0; 
+            bottom: 0; 
+        }
+
+        #leftP{ 
+            left: 0 !important;
+        }
+
+        #rightP{
+            right: 0 !important;
+        }
+    }
+
+    #map{
+        position: fixed;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw; 
+    }
+
+    #back{
+        position: fixed;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw; 
+        background-color: #232123;
+    }
+
+    #midsection{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white; 
+        font-size: 90px;
+        font-family: Arial, Helvetica, sans-serif !important;
+
+        #artwork_container{
+            width: inherit;
+            display: flex; 
+            flex-direction: inherit;
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+            
+
+            #art{
+                position: inherit;
+                display: inherit;
+                width: 40%;
+                align-items: center;
+                padding-bottom: 5%; 
+            }
+        }
+
+
+        #button_container{
+            position: inherit;
+            display: inherit;
+            width: 50%;
+        }
+
+
+
+    }
+}
+
+
+#container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #232123;
+    color: white;
+    text-align: center;
+
+}
+
+#h3 {
+    color:white; 
+    display: flex; 
+}
