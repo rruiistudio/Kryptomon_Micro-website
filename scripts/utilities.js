@@ -23,3 +23,21 @@ export const redirect = () => {
         console.log('map loaded successfully')
     }
 };
+
+export function loadJSONFile(callback, path) {   
+
+    var xmlobj = new XMLHttpRequest();
+
+    xmlobj.overrideMimeType("application/json");
+
+    xmlobj.open('GET', path, true); // Provide complete path to your json file here. Change true to false for synchronous loading.
+
+    xmlobj.onreadystatechange = function () {
+          if (xmlobj.readyState == 4 && xmlobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xmlobj.responseText);
+          }
+    };
+
+    xmlobj.send(null);  
+ }

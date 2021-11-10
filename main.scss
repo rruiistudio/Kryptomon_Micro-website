@@ -210,3 +210,80 @@
     color:white; 
     display: flex; 
 }
+
+
+.mark {
+    background-image: url('./images/Blue_Location_Dot.svg');
+    background-size: cover;
+    //width: 100px;
+    //height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+  }
+
+  .marker {
+    background-image: url('./images/Red_Location_Dot.svg');
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: user 2s infinite;
+  }
+
+  .mapboxgl-popup { 
+    color: black; 
+    z-index: 100; 
+    .p {
+        color:magenta ; 
+    }
+  }
+  
+  .mapboxgl-popup-content {
+    background-image: url('./image/item_balloon.svg');
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 20px; 
+    width:  20vw;
+    height: 15vh;
+
+    
+  }
+
+  #mysterybox{
+      padding: 15%; 
+  }
+
+  .locate{
+      display: fixed;
+      align-items: center;
+      justify-content: center;
+      padding-left: 50%; 
+      padding-top: 50%;
+      width: 100px; 
+      height: 100px; 
+      background-color: white;
+  }
+
+
+  @keyframes pulse {
+    0% {
+      width:60px;
+      height: 60px; 
+    }
+    100% {
+      width:80px;
+      height: 80px; 
+    }
+  }
+
+  @keyframes user {
+    0% {
+      width:70px;
+      height: 70px; 
+    }
+    100% {
+      width:90px;
+      height: 90px; 
+    }
+  }
+
