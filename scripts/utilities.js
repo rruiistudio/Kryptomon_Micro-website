@@ -15,7 +15,7 @@ export default function mobileAndTabletCheck() {
 export function redirect(){
     mobileAndTabletCheck()
     if (check == false) {
-        window.location.href = './Kriptomon_Micro-website/redirect.html';
+        window.location.href = './redirect.html';
     }
 
     else {
