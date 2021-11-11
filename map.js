@@ -1,6 +1,6 @@
 
 //import mobileAndTabletCheck from './utilities.js';
-import geojson from './data.js';
+import geojson from '../data.js';
 import routetoggle from './ui.js';
 
 
