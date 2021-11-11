@@ -10,9 +10,8 @@ let login = document.getElementById('login').value;
 
 function loginSuccess() { 
     console.log(login);
-    window.location.href = '/game.html'; 
+    window.location.href = './Kriptomon_Micro-website/game.html'; 
 }
-
 
 redirect(); 
 loadconfirm();
