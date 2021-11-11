@@ -1,6 +1,6 @@
 //GET HTML ELEMENTS
 
-import loadconfirm, {redirect} from './utilities.js'
+import loadconfirm, {redirect} from 'utilities.js'
 
 let button = document.getElementById('verif');
 let login = document.getElementById('login').value;
@@ -10,7 +10,7 @@ let login = document.getElementById('login').value;
 
 function loginSuccess() { 
     console.log(login);
-    window.location.href = './game.html'; 
+    window.location.href = 'game.html'; 
 }
 
 redirect(); 
