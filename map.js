@@ -328,7 +328,7 @@ export default function approvelocation(counter) {
 export function generateRoute(){
         getRoute(userlocation, end)
 
-        console.log('motherfucking hooray')
+        console.log('signal')
 }
 
 

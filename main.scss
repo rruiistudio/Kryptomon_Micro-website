@@ -213,7 +213,7 @@
 
 
 .mark {
-    background-image: url('./images/Blue_Location_Dot.svg');
+    background-image: url('Blue_Location_Dot.svg');
     background-size: cover;
     //width: 100px;
     //height: 100px;
@@ -223,7 +223,7 @@
   }
 
   .marker {
-    background-image: url('./images/Red_Location_Dot.svg');
+    background-image: url('Red_Location_Dot.svg');
     background-size: cover;
     width: 100vw; 
     height: 100vh; 
@@ -241,7 +241,7 @@
   }
   
   .mapboxgl-popup-content {
-    background-image: url('./image/item_balloon.svg');
+    background-image: url('item_balloon.svg');
     text-align: center;
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 20px; 

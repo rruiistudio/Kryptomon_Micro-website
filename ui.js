@@ -1,6 +1,6 @@
 // 3: INSTRUCTIONS SCREEN 
 
-import approvelocation, { generateRoute } from './map.js'
+import approvelocation, { generateRoute } from 'map.js'
 let routetoggle = false; 
 
 
@@ -55,16 +55,16 @@ function appendElement(elements) {
 
 //Screen1: 
 
-let k_icon = "./images/Kryptomon_character.png";
-let n_button = "./images/next_button.png" ;
-let a_popup = "./images/bubbleA.png";
+let k_icon = "Kryptomon_character.png";
+let n_button = "next_button.png" ;
+let a_popup = "bubbleA.png";
 
 
 
 //Screen2: 
 
-let g_button = "./images/go_button.png" ;
-let b_popup = "./images/bubbleB.png";
+let g_button = "go_button.png" ;
+let b_popup = "bubbleB.png";
 
 let screen1 = [n_button, k_icon, a_popup]
 let screen2 = [g_button, k_icon, b_popup]
