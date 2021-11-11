@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/rruiistudio/Kryptomon_Micro-website/issues"
   },
-  "homepage": "https://github.com/rruiistudio/",
+  "homepage": "https://github.com/rruiistudio/Kryptomon_Micro-website",
   "dependencies": {
     "@turf/boolean-point-in-polygon": "^6.5.0",
     "@turf/buffer": "^6.5.0",
