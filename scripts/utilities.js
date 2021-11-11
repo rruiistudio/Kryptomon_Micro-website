@@ -1,4 +1,4 @@
-export const loadconfirm = () => {
+export function loadconfirm(){
     console.log('page loaded successfully'); 
 };
 
@@ -12,11 +12,10 @@ export default function mobileAndTabletCheck() {
   };
 
 
-export const redirect = () => {
+export function redirect(){
     mobileAndTabletCheck()
     if (check == false) {
-        window.location.href = '/redirect.html';
-
+        window.location.href = '../redirect.html';
     }
 
     else {

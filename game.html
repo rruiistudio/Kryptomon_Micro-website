@@ -5,7 +5,16 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="icon" type="image/jpg" href="./images/kLogo.png"/>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/mapbox-polyline/1.1.1/polyline.js></script>
+
+    <script
+        src=https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js></script>
+    <link rel="stylesheet"
+        href=https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css
+        type="text/css" />
+
+
+    <link rel="icon" type="image/jpg" href="./images/kLogo.png" />
     <title>Treasure Hunt</title>
 </head>
 
@@ -26,11 +35,11 @@
                 </div>
             </div>
             <div id="button_container" class="button">
-                <img id="game_button" class= "button" src="/images/approve_button.png">
-            </div>           
+                <img id="game_button" class="button" src="/images/approve_button.png">
+            </div>
         </div>
 
-        <div class="corners" id="corners" width= 100% height = 100%>
+        <div class="corners" id="corners" width=100% height=100%>
             <img src="/images/sp_left.svg" id="leftP">
             <img src="/images/sp_right.svg" id="rightP">
         </div>

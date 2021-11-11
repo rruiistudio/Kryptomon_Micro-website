@@ -260,6 +260,8 @@
 .marker {
   background-image: url("./images/Red_Location_Dot.svg");
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
   border-radius: 50%;
   cursor: pointer;
   -webkit-animation: user 2s infinite;

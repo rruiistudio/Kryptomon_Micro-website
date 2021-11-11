@@ -1,11 +1,18 @@
 // 3: INSTRUCTIONS SCREEN 
 
-import approvelocation from './map.js'
+import approvelocation, { generateRoute } from './map.js'
+let routetoggle = false; 
+
+
+
+
+//console.log(userlocation)
 
 //asset sources:
 let container = document.getElementById('artwork_container');
 let button = document.getElementById('button_container');
 let ui = document.getElementById('midsection')
+
 
 function appendElement(elements) {
 
@@ -68,23 +75,34 @@ let counter = -1;
 
 
 function changeScreen(){
+    //let routetoggle = false; 
     counter++
     approvelocation(counter)
+    
   
     if (counter < 2) {
         console.log(counter)
         appendElement(screens[counter]);
-        console.log('element removed');
-    } else {
-        //counter = 0;
-        console.log('element number too high'); 
-        ui.remove();
         
+   
+    } 
+    
+    if (counter == 2) {
+
+        routetoggle = true; 
+        ui.remove(); 
+        return routetoggle;
     }
     
-    return counter; 
+    if (counter > 2) {
+        ui.remove();    
+    }
+    
+    return counter, routetoggle; 
     
 }
-
-
 button.addEventListener('click', changeScreen);
+//console.log(routetoggle)
+
+
+export default routetoggle; 
