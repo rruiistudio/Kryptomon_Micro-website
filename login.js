@@ -1,6 +1,6 @@
 //GET HTML ELEMENTS
 
-import loadconfirm, {redirect} from 'utilities.js'
+import loadconfirm, {redirect} from './utilities.js'
 
 let button = document.getElementById('verif');
 let login = document.getElementById('login').value;
