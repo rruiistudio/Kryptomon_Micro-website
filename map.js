@@ -2,7 +2,7 @@
 //import mobileAndTabletCheck from './utilities.js';
 import geojson from './data.js';
 import routetoggle from './ui.js';
-import redirect from './utilities.js';
+//import redirect from './utilities.js';
 
 
 
@@ -332,7 +332,7 @@ export function generateRoute(){
         console.log('signal')
 }
 
-redirect(); 
+//redirect(); 
 
 
 
