@@ -176,7 +176,7 @@ function mysterybox() {
                         .setPopup(
                                 new mapboxgl.Popup({ offset: 25 }) // add popups
                                         .setHTML(
-                                                `<img id="mysterybox" src = "./images/Box_Closed.png" width="100px">
+                                                `<img id="mysterybox" src = "Box_Closed.png" width="100px">
                                                 <h3>Mysterybox</h3><p>${distance} m away</p>`
                                         )
                         )
