@@ -27,6 +27,10 @@ map = setupMap(userlocation)
 let user = marker(userlocation);
 let searchradius = 2; 
 
+map.on('load', function () {
+        map.resize();
+    });
+
 //let availableboxes = 
 
 // FUNCTIONS
