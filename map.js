@@ -187,6 +187,7 @@ function mysterybox() {
                       ])
 
                 new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+                pointDistance();
                 
 
         }
