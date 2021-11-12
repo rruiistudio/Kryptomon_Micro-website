@@ -1,7 +1,7 @@
 //UTILITY FUNCTIONS
-
-//import {loadconfirm, redirect} from '.utilities.js'
-//import mobileAndTabletCheck from 'utilities.js'
+//import _ from 'lodash';
+import {loadconfirm, redirect} from '../scripts/utilities.js'
+import mobileAndTabletCheck from '../scripts/utilities.js'
 
 
 mobileAndTabletCheck();
