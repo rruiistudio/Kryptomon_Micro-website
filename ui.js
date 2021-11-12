@@ -1,6 +1,6 @@
 // 3: INSTRUCTIONS SCREEN 
 
-import approvelocation, { generateRoute } from 'map.js'
+import approvelocation, { generateRoute } from './map.js'
 let routetoggle = false; 
 
 
