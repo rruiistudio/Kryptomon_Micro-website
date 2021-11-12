@@ -1,4 +1,6 @@
-const geojson = 
+let geojson
+
+export default geojson = 
 {
   "type": "FeatureCollection",
   "features": [
