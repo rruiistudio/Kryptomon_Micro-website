@@ -1,8 +1,7 @@
 
 //import mobileAndTabletCheck from './utilities.js';
-import geojson from '../data.js';
+import geojson from '../scripts/data.js';
 import routetoggle from './ui.js';
-
 
 
 //DECLARE VARIABLES
@@ -179,6 +178,8 @@ function mysterybox() {
 
                         return distance
                 }
+
+                pointDistance();
 
                 getRoute(userlocation, [
                         114.14438724517821,

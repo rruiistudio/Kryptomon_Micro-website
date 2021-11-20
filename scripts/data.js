@@ -1,4 +1,10 @@
-const geojson = 
+import inputhandler from "./inputhandler.js"
+
+let userinput
+let button = document.getElementById('button'); 
+
+// initialize data to something 
+let data = 
 {
   "type": "FeatureCollection",
   "features": [
@@ -347,4 +353,38 @@ const geojson =
 }
 
 
-export default geojson; 
+let newvalue
+
+function whichdata() {
+  if (userinput.length == 0) {
+    geojson = 0;
+  } else {
+    geojson = userinput;
+    console.log('dumb')
+  }
+}
+
+function json(){
+  data = inputhandler(userinput, data)
+  console.log(data)
+  
+
+  return data
+}
+
+function click() {
+  userinput = document.getElementById('newdata').value;
+  data = inputhandler(userinput, geojson)
+  
+}
+
+
+
+//button.addEventListener('click', whichdata);
+
+
+export default newvalue;
+
+
+
+ 

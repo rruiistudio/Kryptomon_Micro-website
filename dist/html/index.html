@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/jpg" href="./images/kLogo.png"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" type="image/jpg" href="../images/kLogo.png"/>
     <title>Hunt Login</title>
     <script src="https://unpkg.com/lodash@4.17.20"></script>
     
@@ -12,23 +12,21 @@
 <html>
 
 <body>
-    <div id='cont'>
-       
+    <div id='cont'>     
         <div id="auth">
             <p>Input your token to login</p>
             <div id="field">
                 <input id="login" class="input" type="text">
             </div>
-            <img id="verif" class= "button" src="./images/verify_button.png">
+            <img id="verif" class= "button" src="../images/verify_button.png">
         </div>
-    
-
         <div id='back' class='obj'>
         </div>
 
     </div>
 
 </body>
-<script type="module" src='./login.js'></script>
+<script type="module" src='/scripts/splashscreen.js'></script>
+<script type="module" src='/scripts/login.js' defer></script>
 
 </html>
