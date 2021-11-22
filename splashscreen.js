@@ -1,5 +1,5 @@
 let div
-let logosrc = "/dist/images/kLogo.png";
+let logosrc = "./kLogo.png";
 
 function createscreen(){
     const div = document.createElement('div'); 
