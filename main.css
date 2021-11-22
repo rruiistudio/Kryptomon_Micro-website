@@ -6,7 +6,7 @@ body {
 
 @font-face {
   font-family: 'mister_london';
-  src: url("./font/mister_london_sans-webfont.woff2") format("woff2"), url("./font/mister_london_sans-webfont.woff") format("woff"), url("./font/mister_london_sans.otf") format("opentype");
+  src: url("./mister_london_sans-webfont.woff2") format("woff2"), url("./font/mister_london_sans-webfont.woff") format("woff"), url("./font/mister_london_sans.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -256,7 +256,7 @@ body {
 }
 
 .mark {
-  background-image: url("../images/Blue_Location_Dot.svg");
+  background-image: url("./Blue_Location_Dot.svg");
   background-size: cover;
   border-radius: 50%;
   cursor: pointer;
@@ -265,7 +265,7 @@ body {
 }
 
 .marker {
-  background-image: url("../images/Red_Location_Dot.svg");
+  background-image: url("./Red_Location_Dot.svg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -285,7 +285,7 @@ body {
 }
 
 .mapboxgl-popup-content {
-  background-image: url("./image/item_balloon.svg");
+  background-image: url("./item_balloon.svg");
   text-align: center;
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 20px;
