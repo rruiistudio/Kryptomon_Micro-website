@@ -29,7 +29,6 @@ function createscreen(){
 }
 
 function destroyscreen(){
-    console.log('removing this biatch')
     div.style.animation = "fadeOut 1s";
     div.remove(); 
 }
