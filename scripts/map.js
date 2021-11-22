@@ -1,54 +1,34 @@
-
 //import mobileAndTabletCheck from './utilities.js';
-import geojson from '../scripts/data.js';
+import geojson from './data.js';
 import routetoggle from './ui.js';
-
-
+import addInfo, {addData} from './mapfunctions.js'
+import locate from './ui.js'
+import appendLocation from './ui.js'
 //DECLARE VARIABLES
 let map
 let lat, long
 
-let userlocation = [-2.24, 53.48]
+let userlocation = [-2.24, 53.48] // initial user location
 let len
 
 let usermarker
 let filter
 let radiusLayer = 'radius'
+let searchradius = 2; 
 
 let start, end
+//--------------------------------------------------------------------------------------------------------------------//
 
 // MAPBOX ACCESS TOKENS
 mapboxgl.accessToken = 'pk.eyJ1IjoicnJ1aWlkZXYiLCJhIjoiY2t2N3FtMjFhMDFmNzJvbzdidnpkaGxweiJ9.R0WQ2KnHg8EQ9wyWPYLQFg';
 
-
+//--------------------------------------------------------------------------------------------------------------------//
+// initialize map & location marker to userlocation
 map = setupMap(userlocation)
 let user = marker(userlocation);
-let searchradius = 2; 
 
-//let availableboxes = 
+// UTILITY FUNCTIONS
 
-// FUNCTIONS
-function addLayer(id, data, color) {
-        map.addLayer({
-                id: id,
-                source: {
-                  type: 'geojson',
-                  data: data
-                },
-                type: 'fill',
-                paint: {
-                  'fill-color': color,
-                  'fill-opacity': 0.1
-                }
-              });
-}
-
-
-
-function addData(layer, data) {
-        map.getSource(layer).setData(data);
-
-}
 
 function initialFly(){
         navigator.geolocation.getCurrentPosition((position) => {
@@ -60,10 +40,26 @@ function initialFly(){
                 })
 
                // getDirection(position, [-2.24, 53.48]);
-        })
-        
-        
+        })    
 }
+
+export function updateFly(){
+        
+        navigator.geolocation.getCurrentPosition((position) => {
+                map.flyTo({
+                        center: [position.coords.longitude, position.coords.latitude],
+                        zoom: 25,
+                        speed: 1.5,
+                        curve: 1,
+                })
+        }) 
+
+}
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------//
 
 function successLocation(position) {
 
@@ -83,12 +79,10 @@ function successLocation(position) {
         console.log(availableBoxes)
  
         let filter = makeRadius(userlocation, searchradius); 
-        addData(radiusLayer, filter);
+        addData(map, radiusLayer, filter);
         
         let allboxes = mysterybox();
-
-    
-
+        console.log('this is from the success location function')
 
         return userlocation
         
@@ -170,7 +164,7 @@ function mysterybox() {
                         .setPopup(
                                 new mapboxgl.Popup({ offset: 25 }) // add popups
                                         .setHTML(
-                                                `<img id="mysterybox" src = "./images/Box_Closed.png" width="100px">
+                                                `<img id="mysterybox" src = "../images/Box_Closed.png" width="100px">
                                                 <h3>Mysterybox</h3><p>${distance} m away</p>`
                                         )
                         )
@@ -307,31 +301,38 @@ function randomID(location) {
 // GET USER LOCATION ON CLICK 
 
 export default function approvelocation(counter) {
-        if (counter == 0) {
-               
-                userlocation = initialFly(); 
-                getRoute([
-                        114.14219856262207,
-                        22.284609253228098
-                      ]);
-                addLayer('radius', filter, 'white');
+        if (counter == 0) {   
+                updateLocation();   
+                addInfo(map, 'radius', filter, 'white');
                 const watchID = navigator.geolocation.watchPosition(successLocation, errorLocation,
                         {
                                 enableHighAccuracy: true,
                                 trackUserLocation: true,
                                 showUserHeading: true
                         })
-                        return watchID;           
+                        return watchID;                           
         } 
-    
+   
+}
+
+export function updateLocation() {
+        userlocation = initialFly(); 
+     
 }
 
 export function generateRoute(){
         getRoute(userlocation, end)
-
-        console.log('motherfucking hooray')
+        console.log('hooray')
 }
 
+/*
+async function update(){
+        await appendLocation();
+        console.log('triggerreeedddd')
+        //updateFly();
+} 
+locate.addEventListener('click', update); 
+*/
 
 
 

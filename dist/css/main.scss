@@ -220,7 +220,7 @@ body {
 
 
 .mark {
-    background-image: url('./images/Blue_Location_Dot.svg');
+    background-image: url('../images/Blue_Location_Dot.svg');
     background-size: cover;
     //width: 100px;
     //height: 100px;
@@ -230,7 +230,7 @@ body {
   }
 
   .marker {
-    background-image: url('./images/Red_Location_Dot.svg');
+    background-image: url('../images/Red_Location_Dot.svg');
     background-size: cover;
     width: 100vw; 
     height: 100vh; 
@@ -272,6 +272,40 @@ body {
       height: 100px; 
       background-color: white;
   }
+
+
+#util {
+  position: absolute; 
+  display: flex; 
+  flex-direction: row; 
+  bottom: 0; 
+  justify-content: center;
+  margin-bottom: 12%; 
+  //align-items: center;
+}
+
+.toggle{ 
+  padding: 30%; 
+  padding-bottom: 0% !important; 
+  bottom: 0; 
+  z-index: 1; 
+  opacity: 50%; 
+}
+
+.toggle:active{
+  opacity: 100%; 
+}
+
+
+
+.nav{
+  border-radius: 15px;
+}
+
+
+#box{
+  opacity: 50%;
+}
 
 
   @keyframes pulse {

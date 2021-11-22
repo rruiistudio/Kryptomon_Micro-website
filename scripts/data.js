@@ -1,10 +1,10 @@
-import inputhandler from "./inputhandler.js"
+
 
 let userinput
 let button = document.getElementById('button'); 
 
 // initialize data to something 
-let data = 
+let geojson = 
 {
   "type": "FeatureCollection",
   "features": [
@@ -383,7 +383,7 @@ function click() {
 //button.addEventListener('click', whichdata);
 
 
-export default newvalue;
+export default geojson;
 
 
 
