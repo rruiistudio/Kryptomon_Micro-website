@@ -87,4 +87,34 @@ body {
   border-radius: 15px;
   border-color: #361b36;
 }
+
+@-webkit-keyframes spin {
+  from {
+    width: 15%;
+    opacity: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    width: 10%;
+    opacity: 100%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    width: 15%;
+    opacity: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    width: 10%;
+    opacity: 100%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=interface.css.map */

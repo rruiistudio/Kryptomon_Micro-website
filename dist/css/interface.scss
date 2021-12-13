@@ -65,3 +65,16 @@ body {
     border-radius: 15px;
     border-color: #361b36;
 }
+
+@keyframes spin {
+    from {
+        width: 15%; 
+        opacity: 50%; 
+        transform: rotate(0deg);
+      }
+      to {
+        width: 10%;
+        opacity: 100%; 
+        transform: rotate(360deg);
+      }
+  }
